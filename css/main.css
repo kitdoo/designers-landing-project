@@ -17,6 +17,9 @@ li {
 a {
   color: #FFF;
 }
+input {
+  outline: none;
+}
 .header {
   width: 100%;
   height: 862px;
@@ -167,6 +170,72 @@ a {
 .services-card__icon--bg-pencil {
   background-image: url(../img/gifts/pencil.svg);
 }
+.subscribe {
+  height: 249px;
+  background-image: -moz-linear-gradient(to top, rgba(58, 64, 69, 0.9), rgba(58, 64, 69, 0.9)), url(../img/bg/subscribe-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.subscribe__input {
+  height: 50px;
+  text-align: left;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  padding-left: 25px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.works {
+  height: auto;
+}
+.works__subtitle {
+  text-align: center;
+  padding-bottom: 90px;
+}
+.works__item {
+  height: 365px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.works__item a {
+  text-decoration: none;
+}
+.works-item__hover {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 360px;
+  height: 360px;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: rgba(247, 96, 14, 0.9);
+  -webkit-transition: all 0.8s ease-out;
+  -moz-transition: all 0.8s ease-out;
+  -ms-transition: all 0.8s ease-out;
+  -o-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+.works-item__hover span {
+  color: #fff;
+  margin-bottom: 50px;
+}
+.works__item:hover .works-item__hover {
+  top: 0%;
+  display: block;
+}
 .button {
   width: 208px;
   height: 50px;
@@ -174,8 +243,8 @@ a {
   line-height: 40px;
   font-weight: 600;
   background-color: transparent;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   border: 1px solid #65696f;
   text-decoration: none;
   padding-top: 4px;
@@ -213,8 +282,52 @@ a {
   color: #FFF;
   padding-top: 3px;
 }
+.button--subscribe {
+  background-color: #f7600e;
+  border: none;
+  border: 1px solid #f7600e;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button--subscribe:hover {
+  border: 1px solid #fff;
+}
+.button--grey {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #3B434C;
+}
+.button--white {
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f7600e;
+  border: 2px solid #fff;
+  color: #FFF;
+}
+.button--white:hover {
+  background-color: #FFF;
+  border: 2px solid #fff;
+  color: #f7600e;
+}
+.heading {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
 .special-color {
   color: #f7600e;
+}
+.special-works {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FFF;
+  padding-top: 30px;
+  padding-bottom: 25px;
 }
 .cmn-toggle-switch {
   font-size: 0;
