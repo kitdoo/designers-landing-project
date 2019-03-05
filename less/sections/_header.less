@@ -15,8 +15,6 @@
 }
 .hed-wrapper {
 	display: flex;
-	-webkit-align-items: center;
-	        align-items: center;
 	    -webkit-justify-content: space-between;
 	            justify-content: space-between;
 	    position: relative;
@@ -47,7 +45,11 @@
 }
 
 .button__wrapper {
-	text-align: center;
+	display: flex;
+	-webkit-align-items: center;
+	        align-items: center;
+	    -webkit-justify-content: center;
+	            justify-content: center;
 	
 }
 
@@ -104,22 +106,10 @@
 		font-size: 20px;
 		letter-spacing: 1.18px;
 		line-height: 59px;		
-		/*&:last-child {
-			margin-right: 0;
-			}*/
 		
 	}
 }
-.down-button {
-	width: 30px;
+.down-wrap {
 	height: 30px;
-	display: inline-block;
-	padding-top: 1px;
-	color: #FFF;
-	border: 2px solid #fff;
-	-webkit-border-radius: 50px;
-	        border-radius: 50px;
 	text-align: center;
-	margin-top: 190px;
-	margin-bottom: 50px;
 }

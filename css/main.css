@@ -30,8 +30,6 @@ a {
 }
 .hed-wrapper {
   display: flex;
-  -webkit-align-items: center;
-  align-items: center;
   -webkit-justify-content: space-between;
   justify-content: space-between;
   position: relative;
@@ -59,7 +57,11 @@ a {
   padding-bottom: 65px;
 }
 .button__wrapper {
-  text-align: center;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 .navigation__toggle {
   display: block;
@@ -115,9 +117,84 @@ a {
   font-size: 20px;
   letter-spacing: 1.18px;
   line-height: 59px;
-  /*&:last-child {
-			margin-right: 0;
-			}*/
+}
+.down-wrap {
+  height: 30px;
+  text-align: center;
+}
+.services {
+  height: auto;
+}
+.services-card {
+  height: auto;
+}
+.services-card__icon {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 80px;
+  border-radius: 80px;
+  border: 1px solid #d4d6d8;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.services-card__title {
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.services-card__disc {
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.services-card__icon--bg-printer {
+  background-image: url(../img/gifts/printer.svg);
+}
+.services-card__icon--bg-monitor {
+  background-image: url(../img/gifts/monitor.svg);
+}
+.services-card__icon--bg-mobile {
+  background-image: url(../img/gifts/mobile.svg);
+}
+.services-card__icon--bg-pencil {
+  background-image: url(../img/gifts/pencil.svg);
+}
+.button {
+  width: 208px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 600;
+  background-color: transparent;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  border: 1px solid #65696f;
+  text-decoration: none;
+  padding-top: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-right: 30px;
+  display: block;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.button:hover {
+  background-color: #f7600e;
+  color: #FFF;
+  text-decoration: none;
+  border: 1px solid #f7600e;
 }
 .down-button {
   width: 30px;
@@ -132,28 +209,9 @@ a {
   margin-top: 190px;
   margin-bottom: 50px;
 }
-.button {
-  width: 208px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 40px;
-  font-weight: 600;
-  background-color: transparent;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  border: 1px solid #65696f;
-  text-decoration: none;
-  padding: 10px 50px;
-  text-align: center;
-  text-transform: uppercase;
+.down-button:hover {
   color: #FFF;
-  margin-right: 30px;
-}
-.button:hover {
-  background-color: #f7600e;
-  color: #FFF;
-  text-decoration: none;
-  border: 1px solid #f7600e;
+  padding-top: 3px;
 }
 .special-color {
   color: #f7600e;
@@ -167,7 +225,7 @@ a {
   display: block;
   overflow: hidden;
   width: 35px;
-  height: 35px;
+  height: 30px;
   margin: 0;
   padding: 0;
   cursor: pointer;
@@ -187,10 +245,10 @@ a {
 .cmn-toggle-switch span {
   display: block;
   position: absolute;
-  top: 20px;
+  top: 12px;
   left: 5px;
   right: 5px;
-  height: 5px;
+  height: 2px;
   background: white;
 }
 .cmn-toggle-switch span::before,
@@ -199,15 +257,15 @@ a {
   display: block;
   left: 0;
   width: 100%;
-  height: 5px;
+  height: 2px;
   background-color: #fff;
   content: "";
 }
 .cmn-toggle-switch span::before {
-  top: -12px;
+  top: -8px;
 }
 .cmn-toggle-switch span::after {
-  bottom: -12px;
+  bottom: -8px;
 }
 /**
  * Style 2
@@ -235,9 +293,6 @@ a {
   transition-property: bottom, transform;
 }
 /* active state*/
-.cmn-toggle-switch__htx.active {
-  position: fixed;
-}
 .cmn-toggle-switch__htx.active span {
   background: none;
 }
@@ -257,4 +312,8 @@ a {
 .cmn-toggle-switch__htx.active span::after {
   -webkit-transition-delay: 0, 0.3s;
   transition-delay: 0, 0.3s;
+}
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
