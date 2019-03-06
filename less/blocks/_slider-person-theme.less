@@ -24,7 +24,6 @@
 		display: block;
 	}
 }
-
 .owl-prev {
 	left: 0;
 	background-image: url('../img/arrow-left.png');
@@ -32,21 +31,17 @@
 .owl-next {
 	right: 0;
 	background-image: url('../img/arrow-right.png');
-	
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */
 .slider-person-theme .owl-controls.clickable .owl-buttons div:hover{
 }
-
 /* Styling Pagination*/
 .owl-pagination {
+	display: block;
 	position: absolute;
 	bottom: -62px;
 	width: 100%;
-	@media(min-width: 992px) {
-		display: none;
-	}
 }
 
 .slider-person-theme .owl-controls .owl-page{
@@ -65,6 +60,9 @@
 	-moz-border-radius: 20px;
 	border-radius: 20px;
 	background: #fff;
+		@media (min-width: 1200px) {
+		display: none;
+	}
 }
 
 .slider-person-theme .owl-controls .owl-page.active span,

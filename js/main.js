@@ -47,8 +47,10 @@ $(document).ready(function() {
 	//Вызов слайдера
 
 	$("#slider-team").owlCarousel({
+		singleItem: false,
 		navigation: true,
 		theme: "slider-team-theme",
+		navigationText : ["",""],
 		slideSpeed: 600
 	});
 

@@ -46,8 +46,21 @@ textarea.form-control {
 	width: 100%;
 	height: auto;
 	display: flex;
-		-webkit-align-items: center;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	@media (min-width: 768px) {
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+				-webkit-align-items: center;
 	        align-items: center;
 	-webkit-justify-content: space-between;
 	        justify-content: space-between;
+	}
+
 }
