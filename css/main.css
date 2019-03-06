@@ -236,6 +236,81 @@ input {
   top: 0%;
   display: block;
 }
+.slider-person {
+  height: auto;
+  background-image: -moz-linear-gradient(to top, rgba(58, 64, 69, 0.9), rgba(58, 64, 69, 0.9)), url(../img/bg/slider-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #FFF;
+}
+.slider__photo {
+  width: 120px;
+  height: 120px;
+  -webkit-border-radius: 80px;
+  border-radius: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.slider__disc {
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.slidrer__name {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+.team {
+  padding-bottom: 100px;
+}
+.team__subtitle {
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 135px;
+}
+.slider-team {
+  width: 285px;
+  height: auto;
+  text-align: center;
+}
+.slider-team__photo {
+  width: 235px;
+  height: 284px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.slider-team__name {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #3B434C;
+  margin-bottom: 25px;
+}
+.slider-team__contacts-icon {
+  height: 25px;
+  margin-bottom: 30px;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.slider-team__dicr {
+  color: #3B434C;
+}
 .button {
   width: 208px;
   height: 50px;
@@ -429,4 +504,180 @@ input {
 .section {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+.slider-person-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+/* Styling Next and Prev buttons */
+.slider-person-theme .owl-controls .owl-buttons div {
+  display: none;
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  top: 50%;
+  margin-top: -20px;
+}
+@media (min-width: 1200px) {
+  .slider-person-theme .owl-controls .owl-buttons div {
+    display: block;
+  }
+}
+.owl-prev {
+  left: 0;
+  background-image: url('../img/arrow-left.png');
+}
+.owl-next {
+  right: 0;
+  background-image: url('../img/arrow-right.png');
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+/* Styling Pagination*/
+.owl-pagination {
+  position: absolute;
+  bottom: -62px;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .owl-pagination {
+    display: none;
+  }
+}
+.slider-person-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+}
+.slider-person-theme .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: alpha(opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #fff;
+}
+.slider-person-theme .owl-controls .owl-page.active span,
+.slider-person-theme .owl-controls.clickable .owl-page:hover span {
+  filter: alpha(opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+}
+/* If PaginationNumbers is true */
+.slider-person-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+/* preloading images */
+.owl-item.loading {
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center;
+}
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+.slider-team-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+/* Styling Next and Prev buttons */
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+/* Styling Pagination*/
+.owl-pagination {
+  display: block;
+  position: absolute;
+  bottom: -62px;
+  width: 100%;
+}
+.slider-team-theme .owl-controls .owl-page {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  /*IE7 life-saver */
+}
+.slider-team-theme .owl-controls .owl-page span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: alpha(opacity=50);
+  /*IE7 fix*/
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #fff;
+}
+.slider-team-theme .owl-controls .owl-page.active span,
+.slider-team-theme .owl-controls.clickable .owl-page:hover span {
+  filter: alpha(opacity=100);
+  /*IE7 fix*/
+  opacity: 1;
+}
+/* If PaginationNumbers is true */
+.slider-team-theme .owl-controls .owl-page span.owl-numbers {
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+/* preloading images */
+.owl-item.loading {
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center;
+}
+.contact-facebook,
+.contact-twitter,
+.contact-google,
+.contact-world,
+.contact-be {
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.contact-facebook {
+  background-image: url(../img/social/facebook.png);
+}
+.contact-twitter {
+  background-image: url(../img/social/twitter.png);
+}
+.contact-google {
+  background-image: url(../img/social/google.png);
+}
+.contact-world {
+  background-image: url(../img/social/world.png);
+}
+.contact-be {
+  background-image: url(../img/social/be.png);
+}
+.wh-contact-1 {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
 }
