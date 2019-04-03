@@ -96,17 +96,28 @@
 	li{
 		margin: 0;
 		padding: 0;
-		margin-bottom: 40px;
 		margin-left: auto;
 		margin-right: auto;
 		display: block;
 		font-size: 20px;
 		letter-spacing: 1.18px;
-		line-height: 59px;		
-		
+		line-height: 59px;
+		a{
+			font-size: 35px;
+			line-height: 70px;
+			font-weight: 600;
+			&:hover, &:focus, &:active{
+		color: @special;text-decoration: none;	}	
+		}
+				
 	}
 }
 .down-wrap {
 	height: 30px;
 	text-align: center;
+}
+.icon-menu-wrap {
+	height: 180px;
+	padding-top: 100px;
+	border-top: 2px solid @special;
 }

@@ -13,6 +13,7 @@
 	text-transform: uppercase;
 	color: #FFF;
 	margin-right: 30px;
+
 	display: block;
 	-webkit-transition: all 0.2s ease-in;
 	   -moz-transition: all 0.2s ease-in;
@@ -36,7 +37,8 @@
 	width: 30px;
 	height: 30px;
 	display: inline-block;
-	padding-top: 1px;
+	line-height: 30px;
+	padding-top: 0;
 	color: #FFF;
 	border: 2px solid #fff;
 	-webkit-border-radius: 50px;
@@ -46,6 +48,7 @@
 	margin-bottom: 50px;
 	&:hover {
 		color: #FFF;
+		border: 2px solid @special;
 		padding-top: 3px;
 	}
 }
@@ -55,6 +58,7 @@
 	border: 1px solid @special;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 15px;
 	&:hover {
 		border: 1px solid #fff;
 	}

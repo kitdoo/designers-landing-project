@@ -43,21 +43,8 @@ $(document).ready(function() {
 
 
 
-
-	//Вызов слайдера
-
-	$("#slider-team").owlCarousel({
-		singleItem: false,
-		navigation: true,
-		theme: "slider-team-theme",
-		navigationText : ["",""],
-		slideSpeed: 600
-	});
-
-
-
 	//slide2id - плавная прокрутка по ссылкам внутри страницы
-	$("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
+	$("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id,a.down-button").mPageScroll2id({
 	    highlightSelector:"nav a"
 	});
 
