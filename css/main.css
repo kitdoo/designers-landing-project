@@ -356,6 +356,29 @@ input {
 .slider-team__dicr {
   color: #3B434C;
 }
+
+.circle-list {
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20px;  
+  width: 150px;
+}
+.circle-list li { 
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  background-color: rgba(58, 64, 69, 0.9);
+}
+.circle-list .circle-list-item {
+  background-color: #f7600e;
+}
 .footer {
   background-image: -moz-linear-gradient(to top, rgba(58, 64, 69, 0.9), rgba(58, 64, 69, 0.9)), url(../img/bg/footer-bg.jpg);
   background-repeat: no-repeat;
